@@ -22,5 +22,13 @@ while len(key) < len(message):
 # remove extra chars. of key before adding the values of chars. of message var.
 if len(key) > len(message):
     key = key[:((len(message)))]
-# for loop
+# for loop: main code
+for i in range(len(message)): 
+    message_index = alphabet.index(message[i]) #19
+    for j in range(len(key)): 
+        key_index = alphabet.index(key[i])
+    mod = message_index + key_index
+    if mod >= 26:
+        mod -= 26
+    encrypted_message += alphabet[mod]
 # print result

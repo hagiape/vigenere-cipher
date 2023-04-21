@@ -16,7 +16,11 @@ catch_errors(key)
 # placeholder variables for the mod value and encrypted message
 encrypted_message = ''
 mod = 0
-# while loop to correspond key chars. with message chars.
+# while loop to match key chars. with message chars.
+while len(key) < len(message):
+    key += key
 # remove extra chars. of key before adding the values of chars. of message var.
+if len(key) > len(message):
+    key = key[:((len(message)))]
 # for loop
 # print result

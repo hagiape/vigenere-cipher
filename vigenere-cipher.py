@@ -32,3 +32,6 @@ for i in range(len(message)):
         mod -= 26
     encrypted_message += alphabet[mod]
 # print result
+print('\033[32m~' * (19 + len(encrypted_message)) + '\033[0m')
+print('Encrypted message: \033[33m' + encrypted_message + '\033[0m')
+print('\033[32m~' * (19 + len(encrypted_message)) + '\033[0m')
